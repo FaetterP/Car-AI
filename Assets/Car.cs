@@ -36,7 +36,7 @@ namespace Assets
 
         void OnTriggerStay2D(Collider2D collision)
         {
-            if (collision.tag.Contains("path"))
+            if (collision.tag.Contains("path") && isNeedRestart() == false)
                 score++;
         }
 
